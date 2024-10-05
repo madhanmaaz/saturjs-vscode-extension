@@ -1,0 +1,45 @@
+{
+	"name": "saturjs-vscode-extension",
+	"displayName": "SaturJs",
+	"description": "SaturJs Language Support for Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "madhanmaaz",
+	"author": {
+		"name": "madhanmaaz",
+		"url": "https://madhanmaaz.netlify.app"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/madhanmaaz/saturjs-vscode-extension"
+	},
+	"icon": "assets/icon.png",
+	"categories": [
+		"Programming Languages"
+	],
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "html",
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"scopeName": "text.html",
+				"path": "./syntaxes/html.tmLanguage.json",
+				"injectTo": [
+					"text.html"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}

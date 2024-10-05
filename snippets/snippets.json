@@ -1,0 +1,64 @@
+{
+    "saturJs comment": {
+        "prefix": "#",
+        "body": [
+            "{{# $1 }}"
+        ],
+        "description": "saturJs comment block"
+    },
+    "saturJs no escapeHTML": {
+        "prefix": "-",
+        "body": [
+            "{{- $1 }}"
+        ],
+        "description": "saturJs no escapeHTML"
+    },
+    "saturJs if condition": {
+        "prefix": "if",
+        "body": [
+            "{{ if ($1) }}",
+            "    $2",
+            "{{/}}"
+        ],
+        "description": "saturJs if"
+    },
+    "saturJs elseif condition": {
+        "prefix": "elseif",
+        "body": [
+            "{{ else if ($1) }}",
+            "    $2"
+        ],
+        "description": "saturJs elseif"
+    },
+    "saturJs else condition": {
+        "prefix": "else",
+        "body": [
+            "{{ else }}",
+            "    $1"
+        ],
+        "description": "saturJs else"
+    },
+    "saturJs end": {
+        "prefix": "/",
+        "body": [
+            "{{/}}"
+        ],
+        "description": "saturJs end"
+    },
+    "saturJs for loop": {
+        "prefix": "for",
+        "body": [
+            "{{ for(value, key in object) }}",
+            "    $1",
+            "{{/}}"
+        ],
+        "description": "saturJs array iteration"
+    },
+    "saturJs import component": {
+        "prefix": "import",
+        "body": [
+            "{{ import(\"$1\", { $2 }) }}"
+        ],
+        "description": "saturJs component import"
+    }
+}

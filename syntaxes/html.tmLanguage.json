@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SaturJs",
+	"scopeName": "text.html",
+	"injectionSelector": "L:text.html",
+	"patterns": [
+		{
+			"include": "#jsCodeBlock"
+		}
+	],
+	"repository": {
+		"jsCodeBlock": {
+			"patterns": [
+				{
+					"begin": "{{",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.js.html"
+						}
+					},
+					"end": "}}",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.js.html"
+						}
+					},
+					"contentName": "source.js.embedded.html",
+					"patterns": [
+						{
+							"include": "source.js"
+						}
+					]
+				}
+			]
+		}
+	}
+}
