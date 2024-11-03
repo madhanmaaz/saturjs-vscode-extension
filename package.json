@@ -2,7 +2,7 @@
 	"name": "saturjs-vscode-extension",
 	"displayName": "SaturJs",
 	"description": "SaturJs Language Support for Visual Studio Code",
-	"version": "0.0.3",
+	"version": "0.0.2",
 	"publisher": "madhanmaaz",
 	"author": {
 		"name": "madhanmaaz",
