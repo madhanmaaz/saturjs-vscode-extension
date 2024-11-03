@@ -57,7 +57,7 @@
     "saturJs import component": {
         "prefix": "import",
         "body": [
-            "{{ import(\"$1\", { $2 }) }}"
+            "<import src=\"$1\" />"
         ],
         "description": "saturJs component import"
     }
